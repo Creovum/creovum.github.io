@@ -2,27 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#090d13">
-  <meta name="description" content="Creovum — independent app development. Find privacy information for NITE.">
+  <meta name="theme-color" content="#0d1217">
+  <meta name="description" content="Creovum Digital Studio creates focused Android apps, including NITE and Mercode.">
   <title>Creovum | Digital Studio</title>
   <style>
-    :root{color-scheme:dark;--jade:#10b981;--text:#eef3f7;--sub:#a2afbc;--line:#25313c}
-    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse 60% 40% at 80% 5%,#103d38 0,transparent 80%),#090d13;color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
-    main{max-width:860px;margin:auto;padding:54px 26px 110px}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:22px} .brand{font-size:21px;letter-spacing:.10em;font-weight:850;text-decoration:none;color:var(--text)}.brand i{font-style:normal;color:var(--jade)}.label{font-size:11px;letter-spacing:.27em;color:var(--sub)}h1{font-size:clamp(44px,8vw,68px);line-height:1.1;letter-spacing:-.05em;margin:110px 0 18px}h1 span{color:var(--jade)}p{color:var(--sub);max-width:680px}.card{display:block;background:linear-gradient(135deg,#16262c,#10161d 70%);border:1px solid #24413e;border-radius:20px;padding:28px;margin-top:44px;text-decoration:none;color:inherit;transition:border-color .2s}.card:hover{border-color:var(--jade)}.eyebrow{font-size:12px;color:var(--jade);font-weight:700;letter-spacing:.12em;text-transform:uppercase}.card h2{font-size:28px;margin:10px 0 6px}.card p{margin:0}.more{color:var(--jade);margin-top:20px;display:inline-block;font-weight:650}footer{margin-top:65px;border-top:1px solid var(--line);padding-top:22px;font-size:12px;color:var(--sub)}
+    :root {
+      color-scheme: dark;
+      --jade: #10b981;
+      --text: #edf3f5;
+      --sub: #a5b4bd;
+      --line: #26363b;
+      --surface: #17232a;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: radial-gradient(ellipse 66% 38% at 88% 0%, #123c35 0, transparent 73%), #0d1217;
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+    }
+    .wrap { width: min(100% - 40px, 656px); margin-inline: auto; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 27px 0 21px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { font-size: 17px; font-weight: 850; letter-spacing: .13em; line-height: 1; text-decoration: none; color: var(--text); }
+    .brand .dot, .hero h1 span { color: var(--jade); }
+    .studio { color: #90a7b6; letter-spacing: .25em; font-size: 9px; font-weight: 600; text-transform: uppercase; }
+    main { padding-top: 83px; }
+    .hero h1 { font-size: clamp(38px, 6vw, 56px); line-height: 1.14; letter-spacing: -.05em; font-weight: 800; margin: 0 0 10px; }
+    .hero p { color: #9bb3c1; margin: 0; font-size: 14px; }
+    .apps { margin-top: 37px; display: grid; gap: 18px; }
+    .app-card {
+      border: 1px solid #294249;
+      border-radius: 16px;
+      background: linear-gradient(125deg, #1b2d32 0%, #182126 73%, #171d24 100%);
+      padding: 23px;
+      min-height: 178px;
+    }
+    .eyebrow { color: var(--jade); text-transform: uppercase; letter-spacing: .11em; font-size: 11px; font-weight: 750; margin: 0 0 10px; }
+    .app-card h2 { font-size: 24px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -.035em; font-weight: 750; }
+    .app-card .tagline { color: #9bb8c9; font-size: 14px; margin: 0 0 18px; }
+    .app-card a { color: #10d7a0; font-size: 14px; font-weight: 650; text-decoration: none; }
+    .app-card a:hover, .app-card a:focus-visible { color: #7bf4cb; text-decoration: underline; text-underline-offset: 4px; }
+    a:focus-visible { outline: 2px solid var(--jade); outline-offset: 5px; border-radius: 3px; }
+    footer { border-top: 1px solid var(--line); color: #88a4b6; font-size: 12px; margin: 52px 0 0; padding: 16px 0 50px; }
+    @media (max-width: 520px) {
+      .wrap { width: min(100% - 36px, 656px); }
+      header { padding-top: 22px; }
+      .studio { font-size: 8px; letter-spacing: .17em; }
+      main { padding-top: 62px; }
+      .hero p { line-height: 1.6; }
+      .apps { margin-top: 30px; gap: 15px; }
+      .app-card { padding: 21px; min-height: 170px; }
+    }
   </style>
 </head>
 <body>
-  <main>
-    <header><a class="brand" href="/">CREOVUM<i>.</i></a><div class="label">DIGITAL STUDIO</div></header>
-    <h1>Thoughtfully made<span>.</span></h1>
-    <p>Small, focused Android experiences. Useful by design, simple to use.</p>
-    <a class="card" href="/nite/privacy-policy/" aria-label="Read NITE Privacy Policy">
-      <span class="eyebrow">Android app</span><h2>NITE</h2>
-      <p>Time, after dark.</p><span class="more">Privacy Policy &rarr;</span>
-    </a>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/" aria-label="Creovum home">CREOVUM<span class="dot">.</span></a>
+      <span class="studio">DIGITAL STUDIO</span>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="headline">
+        <h1 id="headline">Thoughtfully made<span>.</span></h1>
+        <p>Small, focused Android experiences. Useful by design, simple to use.</p>
+      </section>
+      <section class="apps" aria-label="Creovum Android apps">
+        <article class="app-card">
+          <p class="eyebrow">ANDROID APP</p>
+          <h2>NITE</h2>
+          <p class="tagline">Time, after dark.</p>
+          <a href="/nite/privacy-policy/">Privacy Policy <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="app-card">
+          <p class="eyebrow">ANDROID APP</p>
+          <h2>Mercode</h2>
+          <p class="tagline">Service Codes, Decoded.</p>
+          <a href="/mercode/privacy-policy/">Privacy Policy <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+    </main>
     <footer>&copy; 2026 Creovum. Independent app development.</footer>
-  </main>
+  </div>
 </body>
 </html>
