@@ -1,98 +1,68 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#0d1217">
-  <meta name="description" content="Creovum Digital Studio creates focused Android apps, including NITE and Mercode.">
-  <title>Creovum | Digital Studio</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --jade: #10b981;
-      --text: #edf3f5;
-      --sub: #a5b4bd;
-      --line: #26363b;
-      --surface: #17232a;
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--text);
-      background: radial-gradient(ellipse 66% 38% at 88% 0%, #123c35 0, transparent 73%), #0d1217;
-      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      min-height: 100vh;
-    }
-    .wrap { width: min(100% - 40px, 656px); margin-inline: auto; }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 18px;
-      padding: 27px 0 21px;
-      border-bottom: 1px solid var(--line);
-    }
-    .brand { font-size: 17px; font-weight: 850; letter-spacing: .13em; line-height: 1; text-decoration: none; color: var(--text); }
-    .brand .dot, .hero h1 span { color: var(--jade); }
-    .studio { color: #90a7b6; letter-spacing: .25em; font-size: 9px; font-weight: 600; text-transform: uppercase; }
-    main { padding-top: 83px; }
-    .hero h1 { font-size: clamp(38px, 6vw, 56px); line-height: 1.14; letter-spacing: -.05em; font-weight: 800; margin: 0 0 10px; }
-    .hero p { color: #9bb3c1; margin: 0; font-size: 14px; }
-    .apps { margin-top: 37px; display: grid; gap: 18px; }
-    .app-card {
-      border: 1px solid #294249;
-      border-radius: 16px;
-      background: linear-gradient(125deg, #1b2d32 0%, #182126 73%, #171d24 100%);
-      padding: 23px;
-      min-height: 178px;
-    }
-    .eyebrow { color: var(--jade); text-transform: uppercase; letter-spacing: .11em; font-size: 11px; font-weight: 750; margin: 0 0 10px; }
-    .app-card h2 { font-size: 24px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -.035em; font-weight: 750; }
-    .app-card .tagline { color: #9bb8c9; font-size: 14px; margin: 0 0 18px; }
-    .app-card a { color: #10d7a0; font-size: 14px; font-weight: 650; text-decoration: none; }
-    .app-card a:hover, .app-card a:focus-visible { color: #7bf4cb; text-decoration: underline; text-underline-offset: 4px; }
-    a:focus-visible { outline: 2px solid var(--jade); outline-offset: 5px; border-radius: 3px; }
-    footer { border-top: 1px solid var(--line); color: #88a4b6; font-size: 12px; margin: 52px 0 0; padding: 16px 0 50px; }
-    @media (max-width: 520px) {
-      .wrap { width: min(100% - 36px, 656px); }
-      header { padding-top: 22px; }
-      .studio { font-size: 8px; letter-spacing: .17em; }
-      main { padding-top: 62px; }
-      .hero p { line-height: 1.6; }
-      .apps { margin-top: 30px; gap: 15px; }
-      .app-card { padding: 21px; min-height: 170px; }
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="/" aria-label="Creovum home">CREOVUM<span class="dot">.</span></a>
-      <span class="studio">DIGITAL STUDIO</span>
-    </header>
-    <main>
-      <section class="hero" aria-labelledby="headline">
-        <h1 id="headline">Thoughtfully made<span>.</span></h1>
-        <p>Small, focused Android experiences. Useful by design, simple to use.</p>
-      </section>
-      <section class="apps" aria-label="Creovum Android apps">
-        <article class="app-card">
-          <p class="eyebrow">ANDROID APP</p>
-          <h2>NITE</h2>
-          <p class="tagline">Time, after dark.</p>
-          <a href="/nite/privacy-policy/">Privacy Policy <span aria-hidden="true">&rarr;</span></a>
-        </article>
-        <article class="app-card">
-          <p class="eyebrow">ANDROID APP</p>
-          <h2>Mercode</h2>
-          <p class="tagline">Service Codes, Decoded.</p>
-          <a href="/mercode/privacy-policy/">Privacy Policy <span aria-hidden="true">&rarr;</span></a>
-        </article>
-      </section>
-    </main>
-    <footer>&copy; 2026 Creovum. Independent app development.</footer>
-  </div>
-</body>
-</html>
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Creovum Digital Studio — Thoughtfully made.</title><meta content="Independent apps and tools, built with purpose and designed to be simple." name="description"/>
+<meta content="#0B141B" name="theme-color"/><meta content="dark" name="color-scheme"/>
+<meta content="website" property="og:type"/><meta content="Creovum Digital Studio" property="og:site_name"/>
+<meta content="Creovum Digital Studio — Thoughtfully made." property="og:title"/><meta content="Independent apps and tools, built with purpose and designed to be simple." property="og:description"/>
+<link href="assets/brand/creovum_icon_dark.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/style.css" rel="stylesheet"/>
+<link href="https://creovum.dev/" rel="canonical"/><meta content="en_US" property="og:locale"/><meta content="https://creovum.dev/" property="og:url"/><meta content="https://creovum.dev/assets/social/creovum-social.jpg" property="og:image"/><meta content="https://creovum.dev/assets/social/creovum-social.jpg" property="og:image:secure_url"/><meta content="image/jpeg" property="og:image:type"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Creovum Digital Studio — Thoughtfully made. — dark branded preview" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Creovum Digital Studio — Thoughtfully made." name="twitter:title"/><meta content="Independent apps and tools, built with purpose and designed to be simple." name="twitter:description"/><meta content="https://creovum.dev/assets/social/creovum-social.jpg" name="twitter:image"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/><link href="assets/brand/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="assets/brand/favicon-64.png" rel="icon" sizes="64x64" type="image/png"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Creovum Digital Studio","url":"https://creovum.dev/","description":"Independent apps and tools, built with purpose and designed to be simple.","inLanguage":"en"}</script></head><body class="creovum-v24"><a class="skip" href="#main">Skip to content</a><div aria-hidden="true" class="site-bg"></div>
+<div class="header-wrap"><header class="header container">
+<a aria-label="Creovum Digital Studio — home" class="header-logo" href="index.html"><img alt="Creovum Digital Studio" src="assets/brand/creovum_primary_dark.svg"/></a>
+<nav aria-label="Primary navigation" class="desktop-nav"><a aria-current="page" class="active" href="index.html">Home</a><a class="" href="projects.html">Projects</a><a class="" href="about.html">About</a><a class="" href="contact.html">Contact</a></nav>
+<a class="nav-cta" href="contact.html">Let's talk <svg aria-hidden="true" class="" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 24 24" width="19"><path d="M6 18 18 6M8 6h10v10"></path></svg></a>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation menu" class="menu-button" type="button"><svg aria-hidden="true" class="" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 24 24" width="19"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</header><nav aria-label="Mobile navigation" class="mobile-nav" id="mobile-nav"><a aria-current="page" class="active" href="index.html">Home</a><a class="" href="projects.html">Projects</a><a class="" href="about.html">About</a><a class="" href="contact.html">Contact</a></nav></div>
+<main id="main"><section aria-labelledby="home-title" class="container hero">
+<div class="hero-copy"><div class="eyebrow">Independent digital studio</div><h1 id="home-title">Thoughtfully<br/>made<span class="dot-text">.</span></h1>
+<p class="hero-desc">Independent apps and tools, built with purpose and designed to be simple.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="projects.html">Explore projects <svg aria-hidden="true" class="" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 24 24" width="19"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a><a class="btn btn-secondary" href="about.html">About the studio <svg aria-hidden="true" class="" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 24 24" width="19"><path d="M6 18 18 6M8 6h10v10"></path></svg></a></div>
+<div class="hero-bottom"><span class="line"></span>Apps, tools &amp; ideas <span class="tiny-jade">●</span> Built independently</div></div>
+<div class="hero-visual"><div aria-hidden="true" class="laptop"><div class="laptop-lid"><div class="laptop-screen"><img alt="" class="screen-brand" src="assets/brand/creovum_icon_transparent_white.svg"/><span class="screen-label">Thoughtfully made.</span></div></div><div class="laptop-base"></div></div><div aria-hidden="true" class="phone"><div class="phone-screen"><div class="phone-notch"></div><div class="phone-time">23:48</div><div class="phone-day">FRIDAY, NOVEMBER 14</div><div class="phone-moon"></div><div class="phone-hills"></div><div class="phone-footer"><span>◷  07:00</span><span><b>●</b> 80%</span></div></div></div><span class="mock-note">Illustrative product visuals</span></div>
+</section>
+<section aria-label="Selected projects preview" aria-labelledby="projects-title" class="container section" id="projects"><div class="section-label">A look at our projects</div>
+<div class="section-head"><div><h2 id="projects-title">Made to be useful<span class="dot-text">.</span></h2></div><a class="text-link" href="projects.html">All projects <svg aria-hidden="true" class="" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 24 24" width="19"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a></div>
+<div class="project-grid"><article class="project-card" data-reveal=""><div aria-hidden="true" class="project-art nite-art premium-art">
+<div class="art-grid"></div><div class="nite-halo"></div>
+<div class="nite-panel">
+<div class="nite-panel-bar"><span class="nite-mini-logo">NITE<span>.</span></span><span class="nite-mini-dots">•••</span></div>
+<div class="nite-display-time">23:48</div><div class="nite-display-date">FRIDAY · 14 NOV</div>
+<div class="nite-display-moon"></div><div class="nite-display-mountains"></div>
+<div class="nite-panel-bottom"><span>◷  07:00</span><span>●  80%</span></div>
+</div><span class="art-preview-label">CLOCK / SCREENSAVER</span></div><div class="project-content">
+<div class="card-meta"><span class="status testing">Closed testing</span><span class="status" style="color:#8097a0">Android clock &amp; screensaver</span></div>
+<h3 class="project-title"><span aria-hidden="true" class="icon-block nite">N</span>NITE</h3>
+<p class="project-desc">A customizable Android night clock and screensaver, designed for a calmer display after dark.</p><div class="card-footer"><a aria-label="Read about NITE" class="card-link" href="nite.html">View project <svg aria-hidden="true" class="" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 24 24" width="19"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a><span style="color:#627c87;font-size:11px;">01</span></div>
+</div></article><article class="project-card" data-reveal=""><div aria-hidden="true" class="project-art mercode-art premium-art">
+<div class="art-grid"></div><div class="merc-aura"></div>
+<div class="merc-board">
+<div class="merc-board-header"><span>Mercode<span class="jade-punct">.</span></span><small>SERVICE CODES, DECODED.</small></div>
+<div class="merc-board-title">Explore a service code</div>
+<div class="merc-board-engines"><span class="active">Diesel</span><span>Petrol</span></div>
+<div class="merc-board-search">e.g. B2, A5, B7… <span>⌕</span></div>
+<div class="merc-board-divider"></div>
+<div class="merc-board-line"><i></i><i></i><i></i></div>
+<div class="merc-board-line secondary"><i></i><i></i></div>
+</div><span class="art-preview-label">MERCEDES SERVICE CODES</span></div><div class="project-content">
+<div class="card-meta"><span class="status dev">In development</span><span class="status" style="color:#8097a0">Mercedes service codes</span></div>
+<h3 class="project-title"><span aria-hidden="true" class="icon-block merc">M</span>Mercode</h3>
+<p class="project-desc">An Android app that helps Mercedes owners understand A/B service codes and the maintenance they may indicate.</p><div class="card-footer"><a aria-label="Read about Mercode" class="card-link" href="mercode.html">View project <svg aria-hidden="true" class="" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 24 24" width="19"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a><span style="color:#627c87;font-size:11px;">02</span></div>
+</div></article><article class="project-card arrbridge-card" data-reveal=""><div aria-hidden="true" class="project-art arrbridge-image-art premium-art"><img alt="" src="assets/projects/arrbridge-logo-transparent.webp"/></div><div class="project-content">
+<div class="card-meta"><span class="status private">Private project</span><span class="status" style="color:#8097a0">Server tool</span></div>
+<h3 class="project-title"><span aria-hidden="true" class="icon-block bridge">⇄</span>ArrBridge</h3>
+<p class="project-desc">A personal media-automation bridge that helps Swedish release titles match Sonarr series metadata.</p><div class="card-footer"><a aria-label="Read about ArrBridge" class="card-link" href="arrbridge.html">View project <svg aria-hidden="true" class="" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 24 24" width="19"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a><span style="color:#627c87;font-size:11px;">03</span></div>
+</div></article></div>
+</section>
+<section aria-label="About the independent studio" class="container studio-note">
+<div class="studio-note-symbol"><img alt="" src="assets/brand/creovum_icon_transparent_white.svg"/></div>
+<div class="studio-note-copy"><span class="studio-note-kicker">THE STUDIO BEHIND THE WORK</span><h2>A small studio. Useful ideas.</h2>
+<p>Independent apps and server-side tools, designed with care and built to do their job well.</p></div>
+<a class="studio-note-cta" href="about.html">About Creovum <svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="18"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a>
+</section></main>
+<footer class="footer"><div class="container">
+<div class="footer-top"><div><a class="footer-logo" href="index.html"><img alt="Creovum Digital Studio" src="assets/brand/creovum_primary_dark.svg"/></a><p class="footer-small">Small, independent digital products. Thoughtfully made.</p></div>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></nav></div>
+<div class="footer-bottom"><span>© <span id="year">2026</span> Creovum Digital Studio. Made independently.</span><span>Sweden <span class="tiny-jade">●</span> creovum.dev</span></div>
+</div></footer><script defer="" src="assets/site.js"></script></body></html>

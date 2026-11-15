@@ -1,0 +1,17 @@
+CREOVUM WEBSITE v2.8 RC — BROWSER QA
+Tested: 9 HTML pages across widths 320, 360, 390, 430, 600, 768, 820, 1024, 1440 px
+Method: Chromium rendering via set_content with inlined local assets and original Manrope font (used for QA only).
+Reason: this runtime blocks navigating to local file:// and localhost pages, but inlined Chromium rendering and scripted menu interactions work.
+Tested: image loading, horizontal page overflow, main text overflow, mobile menu open/Escape close, local links, OG assets, canonical URLs, sitemap.
+Failures: 0
+Warnings: 0
+Live production deployment, server redirects, Google Fonts network loading, and Safari/Firefox rendering have NOT been tested.
+No changes made to the public website or Hyrule.
+
+FAILURES
+
+WARNINGS
+
+CONTENT FOLLOW-UPS — PUBLISHED EXTERNAL APP POLICIES (NOT EDITED)
+- The Mercode policy currently describes the Report this code email feature as available. Verify the description against the current app build.
+- NITE and Mercode policies still list creovum@s-eriksson.se for privacy contact; the portfolio uses hello@creovum.dev and support@creovum.dev. Keep or update deliberately.
